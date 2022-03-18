@@ -842,7 +842,7 @@ static Key on_empty_keys[] = {
 
 /* 常用配置 */
 static const char *flameshot[]  = { "flameshot","gui", NULL };
-static const char *chrome[]  = { "google-chrome-stable", NULL };
+static const char *chrome[]  = { "chromium", NULL };
 static const char *qv2ray[]  = { "qv2ray", NULL };
 static const char *wechat[]  = { "/opt/apps/com.qq.weixin.deepin/files/run.sh", NULL };
 static const char *pic[]  = { "/home/cen/Documents/bashs/feh.sh", NULL };
