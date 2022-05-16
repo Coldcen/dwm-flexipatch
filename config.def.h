@@ -851,7 +851,9 @@ static const char *sunloginclient[]  = { "sunloginclient", NULL };
 static const char *i3lock[]  = { "i3lock-fancy", NULL };
 static const char *rofi[]  = { "rofi", "-combi-modi", "drun", "-show", "combi", "-icon-theme", "Papirus", "-show-icons", NULL };
 static const char *code[]  = { "code", NULL };
-
+static const char *amixerUp[]  = { "amixer", "set", "Master", "10%+", NULL };
+static const char *amixerDown[]  = { "amixer", "set", "Master", "10%-", NULL };
+static const char *amixer[]  = { "amixer", "set", "Master", "toggle", NULL };
 
 static Key keys[] = {
 	/* modifier                     key            function                argument */
@@ -866,6 +868,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_s,      spawn,          {.v = sunloginclient } },
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = i3lock } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = code } },
+	{ MODKEY,                       XK_F12,      spawn,          {.v = amixerUp } },
+	{ MODKEY,                       XK_F11,      spawn,          {.v = amixerDown } },
+	{ MODKEY,                       XK_F10,      spawn,          {.v = amixer } },
 
 	#if KEYMODES_PATCH
 	{ MODKEY,                       XK_Escape,     setkeymode,             {.ui = COMMANDMODE} },
