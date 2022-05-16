@@ -238,7 +238,7 @@
  * sole purpose of providing visual aid.
  * https://dwm.suckless.org/patches/alternativetags/
  */
-#define BAR_ALTERNATIVE_TAGS_PATCH 1
+#define BAR_ALTERNATIVE_TAGS_PATCH 0
 
 /* This patches provides the ability to use alternative text for tags which contain at
  * least one window.
