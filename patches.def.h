@@ -464,7 +464,7 @@
  * get resized/moved. With this patch, they will.
  * https://dwm.suckless.org/patches/autoresize/
  */
-#define AUTORESIZE_PATCH 0
+#define AUTORESIZE_PATCH 1
 
 /* This patch adds an iscentered rule to automatically center clients on the current monitor.
  * This patch takes precedence over centeredwindowname, alwayscenter and fancybar patches.
